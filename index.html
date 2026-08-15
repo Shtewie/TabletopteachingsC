@@ -66,7 +66,7 @@
     .trust-strip{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin:0 0 2.5rem;padding:0}
     .trust-chip{display:inline-flex;align-items:center;gap:.4rem;border-radius:9999px;border:2px solid var(--border);background:var(--card);padding:.4rem .9rem;font-size:.8125rem;font-weight:700;color:var(--secondary-foreground)}
     .trust-chip::before{content:"";width:.5rem;height:.5rem;border-radius:9999px;background:var(--quest-3)}
-    @media (max-width:640px){.nav-links .nav-scroll-link{display:none}.nav-links{gap:.5rem}.hero h1{font-size:2rem}.quest-board-header h1{font-size:1.875rem}.trust-chip{font-size:.75rem;padding:.35rem .7rem}}@media (min-width:768px){body{padding-bottom:0}.hero{padding:3.5rem}.hero h1{font-size:3.75rem}.hero p{font-size:1.375rem}}
+    @media (max-width:640px){.nav-links .nav-scroll-link{display:none}.nav-links{gap:.5rem}.hero h1{font-size:2rem}.trust-chip{font-size:.75rem;padding:.35rem .7rem}}@media (min-width:768px){body{padding-bottom:0}.hero{padding:3.5rem}.hero h1{font-size:3.75rem}.hero p{font-size:1.375rem}}
   </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -141,14 +141,14 @@
     <div class="container">
       <header id="top" class="hero">
         <h1>Taking learning on an adventure</h1>
-        <p>Tabletop Teachings runs solo or group sessions for students age 8-18. In our sessions we interact with stories through Dungeons and Dragons gameplay then teach the fundamental skills behind them through reading, writing and drama skills </p>
+        <p>Tabletop Teachings runs solo or group sessions for students aged 8&ndash;18. We explore stories through Dungeons &amp; Dragons gameplay, then teach the fundamental skills behind them &mdash; reading, writing and drama.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-accent" data-track-cta="hero">Ask About a Spot</a>
           <a href="#how-it-works" class="btn btn-ghost">See how a session runs</a>
         </div>
-        <p class="hero-reassure">Takes two minutes. We reply within 24hrsTabletop Teachings — D&D adventures that teach, in [[SUBURB]] and online..</p>
+        <p class="hero-reassure">Takes two minutes. We reply within 24 hours.</p>
       </header>
-      
+
       <main id="main">
         <!-- ═══ Who it's for — the ad-relevance section ═══════════════════ -->
         <section id="who" class="section">
@@ -219,14 +219,13 @@
           </div>
         </section>
 
-    
-        <!-- ═══ Live adventures teaser ═══════════════════════════════════ -->
+        <!-- ═══ Live adventures — cards expand in place ══════════════════ -->
         <section id="live-quests" class="section">
           <h2 class="section-title">Adventures In Progress</h2>
-          <p class="section-sub">Real campaigns, running right now. Two are taking new players.</p>
+          <p class="section-sub">Real campaigns, running right now. Tap a quest to see its world, its characters and the skills the party is working on.</p>
           <div id="home-quests-grid" class="campaign-switcher"></div>
           <p class="section-cta-wrap">
-            <a href="adventures/" class="section-cta">See all adventures &rarr;</a>
+            <a href="#contact" class="section-cta" data-track-cta="quests-section">Ask about a spot &rarr;</a>
           </p>
         </section>
 
@@ -356,6 +355,7 @@
         </section>
           ═══════════════════════════════════════════════════════════════════
         -->
+
         <!-- ═══ FAQ ══════════════════════════════════════════════════════ -->
         <section id="faq" class="section">
           <h2 class="section-title">Questions Parents Ask</h2>
@@ -370,7 +370,7 @@
             </details>
             <details class="faq-item">
               <summary>Isn't this just a games club with a label on it?</summary>
-              <p>Every campaign starts with a written list of reading, writing and social objectives for that group &mdash; you can see the live ones on the <a href="adventures/" style="text-decoration: underline;">adventures page</a>. Objectives are ticked off only when a player actually demonstrates them at the table, and you get a record of your own child's progress, not just the party's.</p>
+              <p>Every campaign starts with a written list of reading, writing and social objectives for that group &mdash; open any quest in <a href="#live-quests" style="text-decoration: underline;">Adventures In Progress</a> and check the Learning tab. Objectives are ticked off only when a player actually demonstrates them at the table, and you get a record of your own child's progress, not just the party's.</p>
             </details>
             <details class="faq-item">
               <summary>My kid is autistic / ADHD / anxious. Is this suitable?</summary>
@@ -407,14 +407,14 @@
       <footer class="site-footer">
         <p class="footer-links">
           <a href="#how-it-works">How It Works</a>
-          <a href="adventures/">Adventures</a>
+          <a href="#live-quests">Adventures</a>
           <a href="#pricing">Pricing</a>
           <a href="#safety">Safety</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </p>
         <p>Tabletop Teachings &mdash; D&amp;D adventures that teach, in [[SUBURB]] and online.</p>
-        <p class="footer-meta">&copy; <span id="year"></span> Tabletop Teachings &nbsp;·&nbsp; ABN [[ABN]] &nbsp;·&nbsp; WWCC [[WWCC_NUMBER]]</p>
+        <p class="footer-meta">&copy; <span id="year"></span> Tabletop Teachings &nbsp;·&nbsp; ABN [[ABN]]</p>
       </footer>
     </div>
   </div>
@@ -427,7 +427,7 @@
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="js/adventures-data.js"></script>
-  <script src="js/home-quests.js"></script>
+  <script src="js/quests.js"></script>
   <script src="js/track.js"></script>
 </body>
 </html>
